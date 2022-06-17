@@ -37,7 +37,7 @@ class ChromeTest {
     void test() {
         // Exercise
         driver.get("https://www.webstaurantstore.com/")
-        String title = driver.getTitle()
+        //String title = driver.getTitle()
 
         // Verify
         WebElement searchBox = driver.findElement(By.name("searchval"))
@@ -48,7 +48,14 @@ class ChromeTest {
 
         Thread.sleep(5000)  // Let the user actually see something!
 
-        assertThat(title).contains("WebstaurantStore")
+        // try adding something to cart
+        WebElement cartButton = driver.findElement(By.name("addToCartButton"))
+
+        cartButton.submit()
+
+        Thread.sleep(5000)  // Let the user actually see something!
+
+        //assertThat(title).contains("WebstaurantStore")
     }
 
 }
