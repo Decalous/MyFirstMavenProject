@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c487166-efef-42d7-a507-fec9c9bc4512" name="Changes" comment="Organized code and tried to empty cart but get an error trying to submit it.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/groovy/MyFirstTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/MyFirstTest.groovy" afterDir="false" />
+    <list default="true" id="9c487166-efef-42d7-a507-fec9c9bc4512" name="Changes" comment="Can iterate through a hardcoded amount of pages. Added TODOs for next steps">
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Main.groovy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655518764283</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Can iterate through a hardcoded amount of pages. Added TODOs for next steps">
+      <created>1655520437415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655520437415</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +126,7 @@
     <MESSAGE value="Referencing the chromedriver api, https://chromedriver.chromium.org/getting-started, was able to search for &quot;stainless work table&quot;" />
     <MESSAGE value="Now able to add to cart; still need to figure out how to add a specific item" />
     <MESSAGE value="Organized code and tried to empty cart but get an error trying to submit it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Organized code and tried to empty cart but get an error trying to submit it." />
+    <MESSAGE value="Can iterate through a hardcoded amount of pages. Added TODOs for next steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can iterate through a hardcoded amount of pages. Added TODOs for next steps" />
   </component>
 </project>
