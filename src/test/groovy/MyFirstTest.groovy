@@ -44,21 +44,35 @@ class ChromeTest {
         WebElement searchBox = driver.findElement(By.name("searchval"))
         searchBox.sendKeys("stainless work table")
         searchBox.submit()
-        //Thread.sleep(5000)
+        //Thread.sleep(5000) // for debugging visually
 
-        // check the search result ensuring every product has the word 'Table' in its title
+        // Check the search result ensuring every product has the word 'Table' in its title
+        //WebElement nextPageButton = driver.findElement(By.className("rc-pagination-next"))
+        //nextPageButton.submit() // when searching by className, get a javascript error "Unable to find owning document"
+        int numPages = 9 // TODO: find the number of pages on the site
+        String page = "https://www.webstaurantstore.com/search/stainless-work-table.html?page="
+        for (int i = 2; i <= numPages;i++){
+            String goTo = page + i.toString()
+            driver.get(goTo)
+            Thread.sleep(2000)  // for debugging visually
+            // TODO: figure out how to iterate through all items on the page
+                // TODO: figure out how to check an item
+        }
+        //driver.get("https://www.webstaurantstore.com/search/stainless-work-table.html?page=2") // not an elegant solution but could hard code each page
+        //Thread.sleep(5000)  // for debugging visually
 
         // try adding something to cart
-        WebElement cartButton = driver.findElement(By.name("addToCartButton"))
-        cartButton.submit()
-        Thread.sleep(5000)
+        //WebElement cartButton = driver.findElement(By.name("addToCartButton"))
+        //cartButton.submit()
+        //Thread.sleep(5000) // for debugging visually
 
-        // Add the last of found items to Cart
+        // TODO: Add the last of found items to Cart
 
         // Empty Cart
-        WebElement emptyCartButton = driver.findElement(By.className("emptyCartButton"))
+        //WebElement emptyCartButton = driver.findElement(By.className("emptyCartButton"))
+        // TODO: figure out why emptyCartButton.submit() breaks
         //emptyCartButton.submit() // breaks when trying this
-        Thread.sleep(5000)  // Let the user actually see something!
+        //Thread.sleep(5000)  // for debugging visually
     }
 
 }

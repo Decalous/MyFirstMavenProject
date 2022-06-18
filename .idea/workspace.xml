@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c487166-efef-42d7-a507-fec9c9bc4512" name="Changes" comment="Now able to add to cart; still need to figure out how to add a specific item">
+    <list default="true" id="9c487166-efef-42d7-a507-fec9c9bc4512" name="Changes" comment="Organized code and tried to empty cart but get an error trying to submit it.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/groovy/MyFirstTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/groovy/MyFirstTest.groovy" afterDir="false" />
     </list>
@@ -25,12 +25,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ChromeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyFirstMavenProject" />
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655500898516</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Organized code and tried to empty cart but get an error trying to submit it.">
+      <created>1655518764283</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655518764283</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +119,7 @@
     <MESSAGE value="Made my first test, similar to the included test in the sample code. Learned that assertThat(title).contains(&quot;something&quot;) is case sensitive." />
     <MESSAGE value="Referencing the chromedriver api, https://chromedriver.chromium.org/getting-started, was able to search for &quot;stainless work table&quot;" />
     <MESSAGE value="Now able to add to cart; still need to figure out how to add a specific item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now able to add to cart; still need to figure out how to add a specific item" />
+    <MESSAGE value="Organized code and tried to empty cart but get an error trying to submit it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Organized code and tried to empty cart but get an error trying to submit it." />
   </component>
 </project>
