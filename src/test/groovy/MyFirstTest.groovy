@@ -35,27 +35,30 @@ class ChromeTest {
 
     @Test
     void test() {
-        // Exercise
+        //// Go to https://www.webstaurantstore.com/
         driver.get("https://www.webstaurantstore.com/")
         //String title = driver.getTitle()
+        //assertThat(title).contains("WebstaurantStore")
 
-        // Verify
+        //// Search for 'stainless work table'
         WebElement searchBox = driver.findElement(By.name("searchval"))
-
         searchBox.sendKeys("stainless work table")
-
         searchBox.submit()
+        //Thread.sleep(5000)
 
-        Thread.sleep(5000)  // Let the user actually see something!
+        // check the search result ensuring every product has the word 'Table' in its title
 
         // try adding something to cart
         WebElement cartButton = driver.findElement(By.name("addToCartButton"))
-
         cartButton.submit()
+        Thread.sleep(5000)
 
+        // Add the last of found items to Cart
+
+        // Empty Cart
+        WebElement emptyCartButton = driver.findElement(By.className("emptyCartButton"))
+        //emptyCartButton.submit() // breaks when trying this
         Thread.sleep(5000)  // Let the user actually see something!
-
-        //assertThat(title).contains("WebstaurantStore")
     }
 
 }
